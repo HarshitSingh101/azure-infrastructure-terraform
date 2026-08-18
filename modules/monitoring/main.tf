@@ -15,7 +15,7 @@ resource "azurerm_monitor_data_collection_rule" "vm_dcr" {
   destinations {
     log_analytics {
       workspace_resource_id = azurerm_log_analytics_workspace.workspace.id
-      name                   = "log-analytics-destination"
+      name                  = "log-analytics-destination"
     }
   }
 

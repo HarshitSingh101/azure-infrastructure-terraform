@@ -27,6 +27,6 @@ variable "bastion_subnet_prefix" {
 }
 
 variable "public_ip_name" {
-  type = string
+  type    = string
   default = null
 }
