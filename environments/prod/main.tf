@@ -67,7 +67,7 @@ module "bastion" {
 }
 
 module "key_vault" {
-  source = "../../modules/key-vault"
+  source = "../../modules/Key-Vault"
 
   key_vault_name      = var.key_vault_name
   location            = azurerm_resource_group.rg.location
