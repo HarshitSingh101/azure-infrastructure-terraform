@@ -1,0 +1,32 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform plans
+*.tfplan
+*.plan
+
+# Sensitive/private keys
+*.pem
+*.key
+*.pfx
+
+# Local Terraform variable files
+*.tfvars
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Local backup directories
+Old-State-Backup/
+State-Recovery-Backup/
+
+# Migration / temporary files
+*.migrated
+*-backup
