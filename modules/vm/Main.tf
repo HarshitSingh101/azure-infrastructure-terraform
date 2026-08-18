@@ -31,8 +31,8 @@ resource "azurerm_linux_virtual_machine" "vm" {
   disable_password_authentication = true
 
   identity {
-  type = "SystemAssigned"
-}
+    type = "SystemAssigned"
+  }
 
   admin_ssh_key {
     username   = var.admin_username
