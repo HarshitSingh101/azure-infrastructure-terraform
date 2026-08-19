@@ -41,5 +41,11 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
+      - name: Create Terraform Variables File
+        env:
+          TFVARS_CONTENT: ${{ vars.TFVARS_CONTENT }}
+        run: |
+          printf '%s\n' "$TFVARS_CONTENT" > terraform.tfvars
+
       - name: Terraform Plan
-        run: terraform plan -input=false
+        run: terraform plan -input=false -var-file=terraform.tfvars
