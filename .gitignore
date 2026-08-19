@@ -30,3 +30,5 @@ State-Recovery-Backup/
 # Migration / temporary files
 *.migrated
 *-backup
+old-state-backup.json
+
