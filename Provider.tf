@@ -4,6 +4,8 @@ terraform {
     storage_account_name = "sttfstateharshit2026"
     container_name       = "tfstate"
     key                  = "real-project.tfstate"
+
+    use_azuread_auth = true
   }
 }
 
