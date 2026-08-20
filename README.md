@@ -91,3 +91,5 @@ The project implements:
                        |
                        v
                   tfstate
+
+![Azure Terraform Architecture](./architecture.png)
